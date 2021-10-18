@@ -1,0 +1,31 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="hero">
+
+        <div id="searchBox">
+            <img src="google.png" id="googleIcon">
+            <input type="text" placeholder="Search Google or type a URL">
+            <img src="mic.png" class="mic-icon">
+        </div>
+
+    </div>
+
+    <script>
+        let searchBox = document.getElementById("searchBox");
+        let googleIcon = document.getElementById("googleIcon");
+
+        googleIcon.onclick = function(){
+            searchBox.classList.toggle("active");
+        }
+    </script>
+</body>
+</html>
